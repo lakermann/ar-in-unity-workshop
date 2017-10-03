@@ -1,0 +1,469 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10. Spawner · CTD 2016 - Unity Workshop</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Lukas Akermann">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11_MODIFY_CUBES.html" />
+    
+    
+    <link rel="prev" href="09_PREFAB.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_SETUP_UNITY.html">
+            
+                <a href="01_SETUP_UNITY.html">
+            
+                    
+                    1. Setup Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02_INTERFACE.html">
+            
+                <a href="02_INTERFACE.html">
+            
+                    
+                    2. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03_SCENE_VIEW.html">
+            
+                <a href="03_SCENE_VIEW.html">
+            
+                    
+                    3. Scene View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04_VUFORIA_EXTENSION.html">
+            
+                <a href="04_VUFORIA_EXTENSION.html">
+            
+                    
+                    4. Vuforia Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05_VUFORIA_TARGET_DATABASE.html">
+            
+                <a href="05_VUFORIA_TARGET_DATABASE.html">
+            
+                    
+                    5. Vuforia Target Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06_CAMERA.html">
+            
+                <a href="06_CAMERA.html">
+            
+                    
+                    6. Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07_IMAGE_TARGET.html">
+            
+                <a href="07_IMAGE_TARGET.html">
+            
+                    
+                    7. Image Target
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08_CUBES.html">
+            
+                <a href="08_CUBES.html">
+            
+                    
+                    8. Cubes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09_PREFAB.html">
+            
+                <a href="09_PREFAB.html">
+            
+                    
+                    9. Prefab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="10_SPAWNER.html">
+            
+                <a href="10_SPAWNER.html">
+            
+                    
+                    10. Spawner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11_MODIFY_CUBES.html">
+            
+                <a href="11_MODIFY_CUBES.html">
+            
+                    
+                    11. Modify Cubes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12_BUILD.html">
+            
+                <a href="12_BUILD.html">
+            
+                    
+                    12. Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >10. Spawner</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="10-create-spawner">10. Create Spawner</h1>
+<p>We will create a spawner that creates the falling cubes.</p>
+<ul>
+<li>Create an empty <code>game object</code>:</li>
+</ul>
+<p><img src="img/spawner_1.png" alt="Screenshot"></p>
+<ul>
+<li>Set <code>name</code> and <code>position</code>:</li>
+</ul>
+<p><img src="img/spawner_2.png" alt="Screenshot"></p>
+<p>We will add a script to the spawner in order to create the falling cubes.</p>
+<ul>
+<li>Create a new folder <code>Scripts</code>:</li>
+</ul>
+<p><img src="img/spawner_3.png" alt="Screenshot"></p>
+<ul>
+<li>Add a C# script with filename <code>SpawnerBehaviour.cs</code>:</li>
+</ul>
+<p><img src="img/spawner_4.png" alt="Screenshot"></p>
+<ul>
+<li>Insert the following C# code:</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-keyword">using</span> UnityEngine;
+<span class="hljs-keyword">using</span> System.Collections;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> SpawnerBehaviour : MonoBehaviour {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> spawnTime = <span class="hljs-number">0.4f</span>;        <span class="hljs-comment">// How long between each spawn.</span>
+    <span class="hljs-keyword">public</span> GameObject objectToSpawn;
+
+    <span class="hljs-comment">// Use this for initialization</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> <span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.</span>
+        InvokeRepeating (<span class="hljs-string">&quot;Spawn&quot;</span>, spawnTime, spawnTime);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Spawn</span> <span class="hljs-params">()</span> </span>{
+        Instantiate (objectToSpawn, gameObject.transform.position, Random.rotation);
+    }
+}
+</code></pre>
+<ul>
+<li>Drag the script on the <code>Spawner</code> in the hierarchy view:</li>
+</ul>
+<p><img src="img/spawner_5.png" alt="Screenshot"></p>
+<ul>
+<li>Remove the <code>Cube</code> from hierarchy:</li>
+</ul>
+<p><img src="img/spawner_6.png" alt="Screenshot"></p>
+<ul>
+<li>Drag cube prefab to public variable <code>Object to Spawn</code>.</li>
+</ul>
+<p><img src="img/spawner_7.png" alt="Screenshot"></p>
+<ul>
+<li>Press the play button and test the preview:</li>
+</ul>
+<p><img src="img/spawner_8.png" alt="Screenshot"></p>
+<p>Rigidbodies enable your GameObjects to act under the control of physics. The Rigidbody can receive forces and torque to make your objects move in a realistic way:</p>
+<ul>
+<li>Add a Rigidbody to Cube prefab.</li>
+</ul>
+<p><img src="img/spawner_9.png" alt="Screenshot"></p>
+<ul>
+<li>Press the play button and test the preview:</li>
+</ul>
+<p><img src="img/spawner_10.png" alt="Screenshot"></p>
+<p>Colliders are a component that allows the game object they&apos;re attached to to react to other colliders provided that one of the game objects has a rigidbody component attached.</p>
+<ul>
+<li>Add a Box Collider to Image target:</li>
+</ul>
+<p><img src="img/spawner_11.png" alt="Screenshot"></p>
+<ul>
+<li>Press the play button and test the preview:</li>
+</ul>
+<p><img src="img/spawner_12.png" alt="Screenshot"></p>
+<p>The spawn point is not high enough and there are a lot of cubes. So we will change the Y axis of the spawn point and make a script to destroy the cubes after a certain period.</p>
+<ul>
+<li>Set the Spawner <code>position</code>:</li>
+</ul>
+<p><img src="img/spawner_13.png" alt="Screenshot"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09_PREFAB.html" class="navigation navigation-prev " aria-label="Previous page: 9. Prefab">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11_MODIFY_CUBES.html" class="navigation navigation-next " aria-label="Next page: 11. Modify Cubes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10. Spawner","level":"1.11","depth":1,"next":{"title":"11. Modify Cubes","level":"1.12","depth":1,"path":"11_MODIFY_CUBES.md","ref":"11_MODIFY_CUBES.md","articles":[]},"previous":{"title":"9. Prefab","level":"1.10","depth":1,"path":"09_PREFAB.md","ref":"09_PREFAB.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Lukas Akermann","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CTD 2016 - Unity Workshop","gitbook":"*"},"file":{"path":"10_SPAWNER.md","mtime":"2016-12-08T06:52:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-08T06:52:54.134Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
