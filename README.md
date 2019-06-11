@@ -1,4 +1,4 @@
-# Augmented Reality with Unity & Vuforia [![Build Status](https://travis-ci.org/lakermann/test.svg?branch=master)](https://travis-ci.org/lakermann/test)
+# Augmented Reality with Unity & Vuforia [![Build Status](https://travis-ci.org/lakermann/ar-with-unity-workshop.svg?branch=master)](https://travis-ci.org/lakermann/ar-with-unity-workshop)
 
 _by [Lukas Akermann](https://github.com/lakermann), Mai 2016_
 
