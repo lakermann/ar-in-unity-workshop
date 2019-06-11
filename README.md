@@ -1,9 +1,9 @@
-# Augmented reality in Unity hands-on workshop
+# Augmented Reality with Unity & Vuforia [![Build Status](https://travis-ci.org/lakermann/test.svg?branch=master)](https://travis-ci.org/lakermann/test)
 
-This Unity workshop was held at the Client Technology Days 2016 at Zuehlke.
+_by [Lukas Akermann](https://github.com/lakermann), Mai 2016_
+
+Course material for the "Augmented Reality with Unity & Vuforia" workshop.
+
+* <https://lakermann.github.io/ar-with-unity-workshop>
 
 [![Demo](https://img.youtube.com/vi/3RIOEBiPE-k/0.jpg)](https://www.youtube.com/watch?v=3RIOEBiPE-k)
-
-Walkthrough can be viewed at <https://lakermann.github.io/ar-in-unity-workshop/>.
-
-The Unity project requires an own Vuforia API key and an own image target database.

@@ -29,8 +29,8 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-# Gitbook
-**/_book
+# Vuepress
+node_modules
 
 # Miscellaneous
 vuforia.txt
