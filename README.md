@@ -1,4 +1,4 @@
-# Augmented Reality with Unity & Vuforia [![Build Status](https://travis-ci.org/lakermann/ar-with-unity-workshop.svg?branch=master)](https://travis-ci.org/lakermann/ar-with-unity-workshop)
+# Augmented Reality with Unity & Vuforia [![Build and deploy documentation](https://github.com/lakermann/ar-with-unity-workshop/actions/workflows/build-and-deploy-documentation.yml/badge.svg)](https://github.com/lakermann/ar-with-unity-workshop/actions/workflows/build-and-deploy-documentation.yml)
 
 _by [Lukas Akermann](https://github.com/lakermann), Mai 2016_
 

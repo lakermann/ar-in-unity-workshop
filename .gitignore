@@ -31,6 +31,7 @@ sysinfo.txt
 
 # Vuepress
 node_modules
+/docs/src/.vuepress/dist
 
 # Miscellaneous
 vuforia.txt
